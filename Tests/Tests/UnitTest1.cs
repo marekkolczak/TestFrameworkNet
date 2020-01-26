@@ -1,13 +1,18 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using NUnit;
+using NUnit.Framework;
+using System;
+using TestFramework;
 namespace Tests
 {
-    [TestClass]
-    public class UnitTest1
+    [TestFixture]
+    public class UnitTest1:BaseTest
     {
-        [TestMethod]
+        [Test]
         public void TestMethod1()
         {
+            HomePage page = new HomePage();
+            page.OpenPage();
+            Console.WriteLine("ffff");
         }
     }
 }

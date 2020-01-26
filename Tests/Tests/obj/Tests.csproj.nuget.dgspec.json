@@ -4,6 +4,17 @@
     "C:\\Users\\user\\source\\repos\\TestFrameworkNet\\Tests\\Tests\\Tests.csproj": {}
   },
   "projects": {
+    "C:\\Users\\user\\source\\repos\\TestFrameworkNet\\Tests\\TestFramework\\TestFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\TestFrameworkNet\\Tests\\TestFramework\\TestFramework.csproj",
+        "projectName": "TestFramework",
+        "projectPath": "C:\\Users\\user\\source\\repos\\TestFrameworkNet\\Tests\\TestFramework\\TestFramework.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\user\\source\\repos\\TestFrameworkNet\\Tests\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -29,7 +40,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\user\\source\\repos\\TestFrameworkNet\\Tests\\TestFramework\\TestFramework.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\TestFrameworkNet\\Tests\\TestFramework\\TestFramework.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -52,6 +67,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.2.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
             },
             "coverlet.collector": {
               "target": "Package",

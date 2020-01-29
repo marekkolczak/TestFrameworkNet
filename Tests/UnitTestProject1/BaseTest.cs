@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,21 +9,29 @@ using TestFramework;
 
 namespace UnitTestProject1
 {
+       
     public  class BaseTest
     {
-        Driver driver;
-        public BaseTest() { SetUp(); }
+        public BaseTest()
+        {
+            if (homePage==null)
+            homePage = new HomePage();
+        }
+
+        HomePage homePage;
+       
         [SetUp]
         public  void SetUp()
         {
-             driver = new Driver();
-             new HomePage().OpenPage();
+           
+              homePage.OpenPage();
         }
         [TearDown]
         public void TearDown()
         {
-            driver.WebDriver.Close();
-            driver.WebDriver.Dispose();
+            homePage.Browser.WebDriver.Close();
+            homePage.Browser.WebDriver.Dispose();
+            Process.GetProcessesByName("chromedriver").ToList().ForEach(x => x.Kill());
         }
 
     }

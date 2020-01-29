@@ -23,3 +23,6 @@ C:\Users\user\source\repos\TestFrameworkNet\Tests\UnitTestProject1\obj\Debug\Uni
 C:\Users\user\source\repos\TestFrameworkNet\Tests\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CopyComplete
 C:\Users\user\source\repos\TestFrameworkNet\Tests\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 C:\Users\user\source\repos\TestFrameworkNet\Tests\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Users\user\source\repos\TestFrameworkNet\Tests\UnitTestProject1\bin\Debug\FluentAssertions.dll
+C:\Users\user\source\repos\TestFrameworkNet\Tests\UnitTestProject1\bin\Debug\FluentAssertions.pdb
+C:\Users\user\source\repos\TestFrameworkNet\Tests\UnitTestProject1\bin\Debug\FluentAssertions.xml

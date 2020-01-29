@@ -9,16 +9,17 @@ namespace TestFramework
 {
     public  class HomePage
     {
-        Driver WebDriver => new Driver();
+        public Browser Browser;
         public  HomePage()
-            {
-           
+            { 
+            if (Browser==null)
+            Browser = new Browser();
             }
         public void  OpenPage()
         {
 
             var Url= ConfigurationManager.AppSettings["PageUrl"];
-            WebDriver.WebDriver.Navigate().GoToUrl(Url);
+            Browser.WebDriver.Navigate().GoToUrl(Url);
         }
     }
 }

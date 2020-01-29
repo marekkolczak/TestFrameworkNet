@@ -1,2 +1,4 @@
 .vs/
 Tests/.vs
+Tests\TestFramework\bin
+Tests\Tests\bin
